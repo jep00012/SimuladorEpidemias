@@ -1,0 +1,35 @@
+class MundoConfig:
+    ANCHO = 1240
+    ALTO = 1080
+    SEMILLA = 766569
+    POBLACION = 200
+    CAPACIDAD_HOSPITALARIA = 10
+    DIA_INICIO_HOSPITALIZACION = 10
+    MINIMO_INDIVIDUOS_INFECTADOS_PARA_HOSPITALIZAR = 11
+    PORCENTAJE_USO_MEDIAS_HIGIENICAS = 0.5
+    EFICACIA_MEDIDAS_HIGIENICAS = 0.3
+    PORCENTAJE_VACUNADOS = 0.2
+
+
+class IndividuoConfig:
+    INFECTADO = 0
+    RECUPERADO = 1
+    HOSPITALIZADO = 2
+    FALLECIDO = 3
+    SANO = 4
+
+    Estado = {
+        INFECTADO: "Infectado.png",
+        RECUPERADO: "Recuperado.png",
+        HOSPITALIZADO: "Hospitalizado.png",
+        FALLECIDO: "Fallecido.png",
+        SANO: "Sano.png"
+    }
+
+
+class EnfermedadConfig:
+    DIAS_RECUPERACION = [10, 15]
+    TASA_MORTALIDAD = 0.02
+    TASA_CONTAGIO = 0.7
+    DIAS_DETECTAR_ENFERMEDAD = 4
+    DIAS_INMUNIDAD = [20, 30]
